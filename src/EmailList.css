@@ -1,0 +1,62 @@
+.emailList {
+  flex: 1;
+  overflow: scroll;
+  padding-bottom: 20%;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.emailList::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.emailList {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.emailList__settings {
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  border-bottom: 1px solid whitesmoke;
+  background-color: white;
+  z-index: 999;
+  padding-right: 10px;
+}
+
+.emailList__sections {
+  display: flex;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  border-bottom: 1px solid whitesmoke;
+  z-index: 999;
+}
+
+.emailList__section {
+  display: flex;
+  align-items: center;
+  border-bottom-width: 2px;
+  padding: 15px;
+  min-width: 200px;
+  cursor: pointer;
+  color: grey;
+  border-width: 0 !important;
+}
+
+.emailList__section--selected {
+  background-color: whitesmoke;
+  border-width: 3px !important;
+}
+
+.emailList__section:hover {
+  background-color: whitesmoke;
+  border-width: 3px !important;
+}
+
+.emailList__section > h4 {
+  font-size: 14px;
+  margin-left: 15px;
+}
